@@ -1,0 +1,49 @@
+.goal6{
+    background-image: url("https://as1.ftcdn.net/v2/jpg/04/20/54/26/1000_F_420542655_U2DpwyhfhyYKAWlrwWdNWMkE882yYwUs.jpg");
+    height: 400px;
+    background-color: black;
+    margin-top: 10px;
+}
+.bread1 {
+    height: auto;
+
+    box-sizing: border-box;
+    width: 250px;
+    height: 180px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 10px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.bread2 {
+    height: auto;
+
+    box-sizing: border-box;
+    width: 250px;
+    height: 180px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 10px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.bread3 {
+    height: auto;
+
+    box-sizing: border-box;
+    width: 250px;
+    height: 180px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 10px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 30px;
+}

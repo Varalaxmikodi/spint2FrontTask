@@ -1,0 +1,123 @@
+
+.goal{
+    /* background-image: url("https://t3.ftcdn.net/jpg/03/24/73/92/360_F_324739203_keeq8udvv0P2h1MLYJ0GLSlTBagoXS48.jpg"); */
+    height: 400px;
+  
+    margin-top: 30px;
+    
+}
+.goods{
+
+    height: 12vh;
+    background-color:lavender;
+   
+    display: flex;
+ 
+
+
+}
+.side-card{
+  background-color: bisque;
+    height: 100vh;
+    position: fixed;
+
+}
+.menu{
+    margin-top: 30px;
+    color: black;
+}
+.create{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+.trash{
+    color: black;
+}
+.input-text1{
+    border-width: 0px;
+    border-bottom: 1px solid skyblue;
+    margin-top: 70px;
+    font-size: 14px;
+}
+.save-button{
+    margin-top: 70px;
+    background-color: rgb(56, 37, 233);
+    width: 400px;
+}
+.save{
+    margin-top: 70px;
+    margin-right: 1300px;
+}
+.text8{
+    border: none;
+    border-bottom: 1px solid rgba(61, 60, 60, 0.35);
+    margin-top: 50px;
+    font-size: 14px;
+}
+.bomma{
+    font-weight: bold;
+    font-style: normal;
+   
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    margin-top: 10px;
+    background-color: rgb(35, 6, 139);
+    color: white;
+    width: 25px;
+    font-size: 23px;
+margin-right: 4px;
+}
+.bomma1{
+    font-weight: normal;
+    font-style: normal;
+   
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    margin-top: 10px;
+    background-color: #e40000;
+    color: white;
+    width: 25px;
+    font-size: 23px;
+}
+.bomma2{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    margin-top: 10px;
+    background-color: #e9941d;
+    color: white;
+    width: 25px;
+    font-size: 23px;
+   margin-right: 2px;
+}
+.rest-card{
+    /* background-image: url("https://images.unsplash.com/6/blurred_lines.jpeg?c…Hx8fHwxNzEyNDQ3MzM4fDA&ixlib=rb-4.0.3&q=80&w=1080"); */
+ 
+   height: 90vh;
+   /* background-color: black; */
+  
+}
+.back-card{
+    height: 90vh;
+   
+ 
+}
+.button-card{
+    margin-left: 1300px;
+    
+}
+.backs{
+    margin-left: 14px;
+}

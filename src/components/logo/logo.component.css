@@ -1,0 +1,20 @@
+.menu{
+
+    font-size: 40px;
+    font-weight: bold;
+}
+.m{
+    display: flex;
+    justify-content: center;
+}
+.n{
+    display: flex;
+    justify-content: center;
+}
+.add{
+    margin-top: 30px;
+    margin-right: 70px;
+}
+.get{
+    margin-top: 30px;
+}
