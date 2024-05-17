@@ -15,7 +15,7 @@ const SharedComponent = (props) => {
 
     return (
         <div className="">
-            <table className="table table-bordered table-hover" style={{"width":"1400px","margin" : "","margin-left":"90px","margin-top":"30px"}} >
+            <table className="table table-bordered table-hover" style={{"width":"1000px","margin" : "","margin-left":"220px","margin-top":"30px"}} >
                 <thead className="table-danger">
                     <tr>
                         {

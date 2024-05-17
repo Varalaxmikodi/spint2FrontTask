@@ -57,8 +57,8 @@ export function AllComponent() {
 
     return (
         <div className="table">
-            <div>
-                <Link to="/create">   <button className="btn btn-success mt-4" style={{ "margin-right": "1400px" }}>Add Item</button></Link>
+            <div className="add">
+                <Link to="/create">   <button className="btn btn-success mt-4 " style={{ "margin-right": "1000px" }}>Add Item</button></Link>
             </div>
             <div className="edo " >
 

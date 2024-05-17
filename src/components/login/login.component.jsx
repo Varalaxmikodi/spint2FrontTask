@@ -58,12 +58,12 @@ export function LoginComponent() {
     return (
 
         <div>
-            <div className='row'>
-                <div className='col-6'>
+            <div className='row '>
+                <div className='col-12 col-sm-6'>
                     <img src={logoImage} className='image-card'></img>
 
                 </div>
-                <div className='col-6'>
+                <div className='col-12 col-sm-6'>
                     <div className='login-form'>
                         <div className='container'>
                             <h6 style={{ textAlign: 'center' }} className='title'>Welcome back!</h6>

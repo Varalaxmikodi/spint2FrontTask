@@ -46,21 +46,20 @@ export function Frontpage() {
 
     const filterData = (query) => {
         let filtered;
-        if(query !=="")
-        {
-             filtered = restData.filter(item =>  item.restarentName.toLowerCase().includes( query.toLowerCase() ));
-             console.log(filtered)
-             setFilteredData(filtered)
+        if (query !== "") {
+            filtered = restData.filter(item => item.restarentName.toLowerCase().includes(query.toLowerCase()));
+            console.log(filtered)
+            setFilteredData(filtered)
         }
-        else{
+        else {
             setFilteredData("")
-             
-            
+
+
         }
-     
-           
+
+
         // const filtered = restData.filter(item =>  console.log(item.restarentName));
- 
+
     };
 
     useEffect(() => {
@@ -73,7 +72,7 @@ export function Frontpage() {
             .catch((error) => {
                 alert(error)
             })
-       
+
     }, [])
 
 
@@ -83,12 +82,18 @@ export function Frontpage() {
     return (
         <div className='main-back'>
 
+
+            {/* head section */}
+
+
+
+
             <div className='good'>
 
 
                 <div className='tall'>
-                    <a href='#' > <span className='number'></span></a>
-                    <a href='/provide' >  <span className='provide'><FaPersonRays className='a' />Provide Services<MdOutlineArrowDropDown /></span></a>
+
+                    <a href='/provide' >  <span className='provide'><FaPersonRays className='number' />Provide Services<MdOutlineArrowDropDown /></span></a>
                     <a href='/myAccount' > <span className='my'><IoPerson className='b' />My account<MdOutlineArrowDropDown /></span></a>
                     <a href='/wishlist' ><span className='wish'><FaHeart className='c' />Wish List</span></a>
                     <a href="/sign" >   <span className='sign'><FaLock className='lock' />Sign In / Sign Up</span></a>
@@ -96,6 +101,9 @@ export function Frontpage() {
                 </div>
 
             </div>
+
+
+            {/* body section */}
 
             <div className='back'>
 
@@ -107,7 +115,7 @@ export function Frontpage() {
 
 
 
-                        {/* <input type="text" className="form-control box" placeholder="Search Your Service Here" /> */}
+                    
                         <input
                             className=' form-control box'
                             type="text"
@@ -117,13 +125,13 @@ export function Frontpage() {
                         />
                         <ul className='max'>
                             {
-                            // if(filterData.length>0){
-                                filteredData.length>0 && filteredData.map((item, index) => (
-                                <a href='/service'> <li key={index} className='like' > {item.restarentName}</li></a>
-                            ))
-                        // }
-                            
-                            
+                                // if(filterData.length>0){
+                                filteredData.length > 0 && filteredData.map((item, index) => (
+                                    <a href='/service'> <li key={index} className='like' > {item.restarentName}</li></a>
+                                ))
+                                // }
+
+
                             }
                         </ul>
                         {/* <label  className='label' ></label> <br />
@@ -152,10 +160,10 @@ export function Frontpage() {
             </div>
 
 
+<div className=''>
+            <div className='row icon-card'>
 
-            <div className='row'>
-
-                <div className='col-2'>
+                <div className='col-2 '>
                     <ol>
                         <img src='https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=48&q=75' className='rest'></img>
                         <a href='/abhi'><li className='home1' >Restaurents
@@ -168,7 +176,7 @@ export function Frontpage() {
                         </li></a>
                     </ol>
                 </div>
-                <div className='col-2'>
+                <div className='col-2 '>
                     <div className='local'>
                         <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg?w=48&q=75" className='spa'></img>
                     </div>
@@ -193,6 +201,7 @@ export function Frontpage() {
                         </ul> */}
                     </li></a>
                 </div>
+
 
                 <div className='col-2'>
                     <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/packers_movers_2023.svg?w=48&q=75" className='rest'></img>
@@ -231,188 +240,175 @@ export function Frontpage() {
                 </div>
 
             </div>
-            <div className='row'>
-                <div className='col-2' >
-                    <div className='close'>
+            </div>
+            <div className='container-fluid'>
+                <div className='row '>
+
+
+                    <div className=' col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'> <img src='https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/portfolio/portfolio-1.jpg' className='bread'></img></a>
                         <a href='/food'> <span className='food'>Food</span></a>
 
                     </div>
-                    <div className='close'>
+                    <div className=' col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'> <img src="https://m.media-amazon.com/images/I/41Xe96WtZoL._AC_SY200_.jpg" className='bread'></img></a>
                         <a href='#'>    <span className='food'>Mobiles</span></a>
+
                     </div>
-                </div>
-                <div className='col-2'>
-                    <div className='close'>
+
+
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'> <img src="https://sulcdn.azureedge.net/content/hpc/job-training.jpg" className='bread'></img></a>
                         <a href='/courses'>   <span className='food'>Courses</span></a>
                     </div>
-                    <div className='close'>
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'>  <img src="https://m.media-amazon.com/images/I/419srwglARL._AC_SY200_.jpg" className='bread'></img></a>
                         <a href='#'>      <span className='food'>Stationary</span></a>
                     </div>
-                </div>
-                <div className='col-2'>
-                    <div className='close'>
+
+
+
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'>  <img src="https://sulcdn.azureedge.net/content/hpc/beauty-parlour.jpg" className='bread'></img></a>
                         <a href='#'>  <span className='food'>Makeup</span></a>
                     </div>
-                    <div className='close'>
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2 '>
                         <a href='#'><img src="https://m.media-amazon.com/images/I/816atz++wqL._AC_SY200_.jpg" className='bread'></img></a>
                         <a href='#'>    <span className='food'>Decoration</span></a>
                     </div>
-                </div>
-                <div className='col-2'>
-                    <div className='close'>
+
+
+
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href=''> <img src="https://sulcdn.azureedge.net/content/images/blogs/53734748-shutterstock_2157379791.jpg" className='bread'></img></a>
                         < a href='#'>      <span className='food'>Interior</span></a>
                     </div>
-                    <div className='close'>
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'> <img src="	https://m.media-amazon.com/images/I/81QiNyrMYEL._AC_SY200_.jpg" className='bread'></img></a>
                         <a href='#'>    <span className='food'>Bed Accessories</span></a>
                     </div>
-                </div>
-                <div className='col-2'>
-                    <div className='close'>
+
+
+
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'> <img src="https://sulcdn.azureedge.net/content/images/blogs/54846187-shutterstock-2166824479-1-1.png" className='bread'></img></a>
                         <a>     <span className='food'>Electronics</span></a>
                     </div>
-                    <div className='close'>
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'>   <img src="https://m.media-amazon.com/images/I/51x3cj+-iUL._AC_SY200_.jpg" className='bread'></img></a>
                         <a href='#'>  <span className='food'>Beauty Products</span></a>
                     </div>
-                </div>
-                <div className='col-2'>
-                    <div className='close'>
+
+
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'>   <img src="https://sulcdn.azureedge.net/content/hpc/properties-to-buy.jpg" className='bread'></img></a>
                         <a href='#'>  <span className='food'>Dream Home</span></a>
                     </div>
-                    <div className='close'>
+                    <div className='clos col-12 col-sm-6 col-md-3 col-lg-2'>
                         <a href='#'>   <img src="https://sulcdn.azureedge.net/content/hpc/web-designers.jpg" className='bread'></img></a>
                         <a href='#'>    <span className='food'>Web Developer</span></a>
                     </div>
+
                 </div>
             </div>
             <div className='row ground'>
-                <div className='col-6 explore ' >
+                <div className='col-6 explore'>
 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6GpQ2JPaxtF0FwK8c7UY8QSv46b9FVemHg&usqp=CAU" className='rap'></img>
 
                 </div>
-                <div className='col-6'>
+                <div className='col-6 six-card'>
                     <img src="https://3.imimg.com/data3/WP/HM/MY-11535832/luxury-villas-500x500.jpg" className='rap'></img>
                 </div>
 
             </div>
+
+            {/* footer  */}
             <div className='foot'>
-                {/* <div className='x'>
-                    <ol className='menu'>
-                        <li className='menu-list'>Information</li>
-                        <li className='menu-list'>Customer Service</li>
-                        <li className='menu-list' >Extras
-                        <ul className='sub-menu'>
-                                <li className='account'>My Account</li>
-                                <li>Booking History</li>
-                                <li>Wish List</li>
-                                <li>News Letter</li>
 
-                            </ul>
-                        
-                        
-                        
-                        </li>
 
-                        <li className='menu-list'>My account
-                            <ul className='sub-menu'>
-                                <li className='account'>My Account</li>
-                                <li>Booking History</li>
-                                <li>Wish List</li>
-                                <li>News Letter</li>
 
-                            </ul>
-                        </li>
 
-                        
 
-                    </ol>
-                </div> */}
-                <div className='row'>
-                    <div className='col-3'>
-                        <ol>
-                            <li className='tag'>Information
-                                <ul className='menu'>
-                                    <li className='doll'>About Us</li>
-                                    <li className='god'>Privacy Policy</li>
-                                    <li className='term'>Terms & Conditions</li>
-                                    <li className='refund'>Refund and Cancellation </li>
-                                    <li className='contacts'>Contacts</li>
-                                    <li className='locations'>Locations</li>
-                                    <li className='map'>Mapping</li>
-                                    <li className='address'>Addresses</li>
-                                </ul>
+                <div className='foot-card'>
+                    <div className='row'>
+                        <div className='col-3'>
+                            <ol>
+                                <li className='tag'>Information
+                                    <ul className='menu'>
+                                        <li className='doll'>About Us</li>
+                                        <li className='god'>Privacy Policy</li>
+                                        <li className='term'>Terms & Conditions</li>
+                                        <li className='refund'>Refund and Cancellation </li>
+                                        <li className='contacts'>Contacts</li>
+                                        <li className='locations'>Locations</li>
+                                        <li className='map'>Mapping</li>
+                                        <li className='address'>Addresses</li>
+                                    </ul>
 
-                            </li>
-                        </ol>
+                                </li>
+                            </ol>
 
-                    </div>
+                        </div>
 
-                    <div className='col-3'>
-                        <ol>
-                            <li className='tag'>Customer Service
-                                <ul className='menu'>
-                                    <a href='/abhi' >  <li className='anchor'>Restuarents</li></a>
-                                    <a href='#' className='anchor' >    <li className='health'>Health</li></a>
-                                    <li className='jobs'>Jobs</li>
-                                    <a href='/education'>   <li className='education'>Education</li></a>
-                                    <li className='makeup'>MakeUp</li>
-                                    <li className='mobiles'>Mobiles</li>
-                                    <li className='stationary'>Stationary</li>
-                                    <li className='decor'>Decoration</li>
+                        <div className='col-3'>
+                            <ol>
+                                <li className='tag'>Customer Service
+                                    <ul className='menu'>
+                                        <a href='/abhi' >  <li className='anchor'>Restuarents</li></a>
+                                        <a href='#' className='anchor' >    <li className='health'>Health</li></a>
+                                        <li className='jobs'>Jobs</li>
+                                        <a href='/education'>   <li className='education'>Education</li></a>
+                                        <li className='makeup'>MakeUp</li>
+                                        <li className='mobiles'>Mobiles</li>
+                                        <li className='stationary'>Stationary</li>
+                                        <li className='decor'>Decoration</li>
 
-                                </ul>
+                                    </ul>
 
-                            </li>
-                        </ol>
+                                </li>
+                            </ol>
 
-                    </div>
+                        </div>
 
-                    <div className='col-3'>
-                        <ol>
-                            <li className='tag'>Personal Services
-                                <ul className='menu'>
-                                    <li className='jobs'>Loans</li>
-                                    <li className='jobs'>Visa Consultants</li>
-                                    <li className='jobs'>Astrologers</li>
-                                    <li className='jobs'>Lawers</li>
-                                    <li className='jobs'>Bed Accessories</li>
-                                    <li className='jobs'>Dream House</li>
-                                    <li className='jobs'>Food</li>
-                                </ul>
+                        <div className='col-3'>
+                            <ol>
+                                <li className='tag'>Personal Services
+                                    <ul className='menu'>
+                                        <li className='jobs'>Loans</li>
+                                        <li className='jobs'>Visa Consultants</li>
+                                        <li className='jobs'>Astrologers</li>
+                                        <li className='jobs'>Lawers</li>
+                                        <li className='jobs'>Bed Accessories</li>
+                                        <li className='jobs'>Dream House</li>
+                                        <li className='jobs'>Food</li>
+                                    </ul>
 
-                            </li>
-                        </ol>
-                    </div>
+                                </li>
+                            </ol>
+                        </div>
 
-                    <div className='col-3'>
-                        <ol>
-                            <li className='tag'>My Account
-                                <ul className='menu'>
-                                    <a href='/myAccount'>  <li className='sap'>My Account</li></a>
-                                    <li className='jobs'>Booking History</li>
-                                    <li className='jobs'>Wish List</li>
-                                    <li className='jobs'>News Letter</li>
-                                    <li className='jobs'>Credentials</li>
-                                </ul>
+                        <div className='col-3'>
+                            <ol>
+                                <li className='tag'>My Account
+                                    <ul className='menu'>
+                                        <a href='/myAccount'>  <li className='sap'>My Account</li></a>
+                                        <li className='jobs'>Booking History</li>
+                                        <li className='jobs'>Wish List</li>
+                                        <li className='jobs'>News Letter</li>
+                                        <li className='jobs'>Credentials</li>
+                                    </ul>
 
-                            </li>
-                        </ol>
+                                </li>
+                            </ol>
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
-            <div className='mouse'>
+            {/* <div className='mouse'>
 
                 <div className='hell'>
                     <span className='footer'>© 2024 Copyright Find Dubai.com. All Rights Reserved</span>
@@ -432,9 +428,11 @@ export function Frontpage() {
                         <a href='#'>    <FaYoutube className='you' /></a>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
+
+
     )
 
 }

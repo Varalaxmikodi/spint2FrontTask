@@ -3,6 +3,15 @@ import './registration.component.css';
 
 
 
+
+
+
+
+
+
+
+
+
 export function RegistrationComponent(){
     return(
         <div>
